@@ -1,32 +1,43 @@
-# MERN ToDo App
+MERN ToDo App
 
-> ToDo app built with the MERN stack along with Redux for state management, Reactstrap and react-transition-group.
+A ToDo app built using the MERN stack.
+It also uses Redux for state management, Reactstrap for UI components, and react-transition-group for animations.
 
-<br/>
+Quick Start
 
-## Quick Start
+Add your MONGO_URI in the default.json file.
 
-Add your MONGO_URI to the `default.json` file. Make sure you set an env var for that and the jwtSecret on deployment
+On deployment, set it as an environment variable along with jwtSecret.
 
-```bash
-# Install dependencies for server
+Install dependencies:
+
+# For the server
+
 npm install
 
-# Install dependencies for client
+# For the client
+
 npm run client-install
 
-# Run the client & server with concurrently
+Run the app:
+
+# Run client & server together
+
 npm run dev
 
-# Run the Express server only
+# Run only the server
+
 npm run server
 
-# Run the React client only
+# Run only the client
+
 npm run client
 
-# Server runs on http://localhost:5000 and client on http://localhost:3000
-```
+Server runs at http://localhost:5000
 
-## Deployment
+Client runs at http://localhost:3000
 
-There is a Heroku post build script so that you do not have to compile your React frontend manually, it is done on the server. Simply push to Heroku and it will build and load the client index.html page
+Deployment
+
+When you deploy to Heroku, the React frontend will build automatically on the server.
+You just push your code to Heroku, and it will serve the index.html from the build.
